@@ -1,0 +1,832 @@
+@media screen and (min-width: 1441px) and (max-width: 1920px) {}
+
+/* 800 */
+
+/* Планшеты (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .first_screen_bk {
+    height: 90vw;
+  }
+
+  .pechatka {
+    height: 30%;
+    margin-top: 5vw;
+  }
+
+  .kniga {
+    width: 45vw;
+    height: 42vw;
+    margin-left: 27vw;
+  }
+
+  .zadok {
+    width: 80vw;
+    height: 45vw;
+    left: 10vw;
+    top: 12vw;
+  }
+
+  .slider-container {
+    top: 66%;
+    width: 100%;
+    margin: -5vw auto 0vw;
+    padding: 0;
+  }
+
+  .splide__slide {
+    margin: 0 8px;
+  }
+
+  .znania {
+    margin-top: 40vw;
+    font-size: 3vw;
+    padding: 4vw 2.5vw;
+  }
+
+  .garmoshka {
+    margin-left: 25vw;
+    width: 15%;
+  }
+
+  .knopki {
+    width: 65vw;
+    margin-left: 30vw;
+  }
+
+  button {
+    width: 15vw;
+    height: 5.5vw;
+    font-size: 1.8vw;
+  }
+}
+
+/* Большие мобильные (415px - 768px) */
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .first_screen_bk {
+    height: 110vw;
+  }
+
+  .pechatka {
+    height: 25%;
+    margin-top: 8vw;
+  }
+
+  .kniga {
+    margin-top: -1vw;
+    width: 52vw;
+    height: 47vw;
+    margin-left: 23vw;
+    animation: rotateBook 8s linear infinite;
+  }
+
+  .zadok {
+    width: 96vw;
+    height: 53vw;
+    left: 2vw;
+    top: 15vw;
+  }
+
+  .slider-container {
+    top: 48%;
+    width: 100%;
+    margin: -5vw auto 0vw;
+    padding: 0;
+  }
+
+  .splide__slide {
+    margin: 0 5px;
+  }
+
+  .splide__arrow {
+    width: 35px;
+    height: 35px;
+  }
+
+  .znania {
+    margin-top: 93vw;
+    font-size: 3.5vw;
+    padding: 5vw 3vw;
+    text-align: center;
+  }
+
+  .splide {
+    position: relative;
+    visibility: visible;
+  }
+
+  .garmoshka {
+    display: none;
+  }
+
+  .knopki {
+    width: 80vw;
+    margin-left: 15vw;
+    padding: 3vw 0;
+  }
+
+  button {
+    width: 18vw;
+    height: 6vw;
+    font-size: 2.2vw;
+    margin: 0 1vw;
+  }
+
+  .first_screen_pr {
+    width: 100vw;
+    height: 113vw;
+    overflow: hidden;
+  }
+
+
+
+  .figura1 {
+    width: 10%;
+    height: 37vw;
+    background-image: url(../img/fig1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 90vw;
+    top: 62.2vw;
+    opacity: 0;
+    animation: fadeIn1 1s ease-in-out infinite;
+  }
+
+  .figura2 {
+    left: 73vw;
+    margin: -38vw 0vw -9vw 0vw;
+    position: absolute;
+    width: 20%;
+    height: 59%;
+    background-image: url(../img/fig2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeIn2 1s ease-in-out infinite 1s;
+  }
+
+  .first_screen_nw {
+    width: 100vw;
+    height: 122vw;
+    overflow-y: hidden;
+  }
+
+  .zadnik::before {
+    position: fixed;
+    z-index: -1;
+    content: "";
+    display: fixed;
+    width: 90%;
+    height: 101%;
+    mask-image: url(../img/zadnik.svg);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    background-color: #F97101;
+    position: absolute;
+    top: -49vw;
+    left: 4vw;
+    animation: ChangeColor 1s linear infinite;
+  }
+}
+
+/* Малые мобильные (до 415px) */
+@media screen and (max-width: 415px) {
+
+  .first_screen {
+    height: 100vw;
+  }
+
+
+  .rozha {
+    width: 94vw;
+    height: 62vw;
+    margin-left: 8px;
+    margin-top: 7vw;
+  }
+
+  .knopki {
+    height: 20vw;
+    width: 90vw;
+    margin-left: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  button {
+    width: 40vw;
+    height: 8vw;
+    font-size: 3vw;
+    margin: 1vw;
+  }
+
+  .about_company,
+  .projects,
+  .book,
+  .news {
+    width: 40vw !important;
+    border-radius: 3vw;
+  }
+
+  .zadnik::before {
+    width: 100%;
+    height: 100%;
+    top: -33vw;
+  }
+
+  .figura1 {
+    width: 14%;
+    height: 50vw;
+    left: 67vw;
+    top: 262.2vw;
+  }
+
+  .screen_second {
+    height: 210vw;
+  }
+
+  .firstpalka,
+  .secondpalka {
+    display: block;
+    width: 100%;
+    height: 60vw;
+  }
+
+  .woodenhouse {
+    width: 100%;
+    height: 45vw;
+  }
+
+  .yellow1 {
+    width: 94%;
+    height: 8vw;
+  }
+
+  .yellow1,
+  .yellow2 {
+    font-size: 4.3vw;
+    padding: 4vw 3vw;
+  }
+
+  .yellow2 {
+    width: 94%;
+    height: 5.2vw;
+  }
+
+  .groupOfShapes {
+    display: block;
+    width: 100%;
+    height: 107vw;
+  }
+
+
+  .vert1 {
+    width: 100%;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #F97101;
+    overflow: hidden;
+  }
+
+  .kirpichi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50.5vw;
+    background-color: #198FFC;
+  }
+
+  .kirpline1,
+  .kirpline2,
+  .kirpline3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15vw;
+    justify-content: space-between;
+  }
+
+  .kirp {
+    width: 23vw;
+    height: 12vw;
+  }
+
+  .svin {
+    height: 50vw;
+  }
+
+  .vert2_vert3_container {
+    display: flex;
+    height: 50vw;
+    width: 100vw;
+  }
+
+  .third_screen {
+    width: 100vw;
+    height: 40vw;
+  }
+
+  .yellow2 {
+    width: 94%;
+    height: 8vw;
+    padding: 4vw 3vw;
+    z-index: 2;
+    margin-top: 0.3vw;
+  }
+
+  .vert2 {
+    width: 44.8%;
+    height: 50.3vw;
+  }
+
+  .figura2 {
+    position: absolute;
+    top: 262vw;
+    left: 45vw;
+    width: 55.3%;
+    height: 23.5%;
+  }
+
+  .bloki {
+    width: 100%;
+    height: 27vw;
+    overflow: hidden;
+  }
+
+
+  .exhibition,
+  .consult,
+  .school,
+  .fest {
+    width: 95%;
+    border: 1px solid black;
+  }
+
+  .description {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .data {
+    height: 27.8vw;
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    border: 1px solid black;
+  }
+
+  .d1,
+  .d2,
+  .d3,
+  .d4 {
+    border: 1px solid black;
+  }
+
+  .novosti {
+    height: 27.5vw;
+    border-top: 0.4vw solid black;
+    border-bottom: 0.4vw solid black;
+  }
+
+  .tablitsa {
+    width: 100vw;
+    display: flex;
+  }
+
+
+  .fest {
+    margin-top: 0vw;
+    height: 9vw;
+  }
+
+  .school {
+    height: 1.9vw;
+  }
+
+  .subscribe_form {
+    width: 98vw;
+  }
+
+  .kir {
+    width: 23vw;
+    height: 12vw;
+  }
+
+  .first_screen_pr {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .reclama {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 4vw;
+  }
+
+  .jilhouse {
+    width: 100%;
+    height: 92.8vw;
+    font-size: 6.6vw;
+    padding: 2.1vw 4vw 2.49vw;
+  }
+
+  .pinkconst {
+    width: 55vw;
+    height: 68vw;
+    margin-left: 43vw;
+    margin-top: 3.5vw;
+  }
+
+  .rayon {
+    width: 100vw;
+    height: 93vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.3vw;
+  }
+
+  .sverhu {
+    margin-top: -1.5vw;
+    margin-left: -0.2vw;
+    width: 110%;
+    height: 54vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .domaplus {
+    position: relative;
+    width: 110%;
+    height: 41vw;
+  }
+
+
+
+  .greendom {
+    margin-top: 3vw;
+    margin-left: 28vw;
+    width: 45vw;
+    height: 34vw;
+  }
+
+
+  .plusik {
+    margin-top: -44vw;
+    margin-left: 41vw;
+    width: 16vw;
+    height: 12vw;
+  }
+
+  .yelfig {
+    margin-left: 21vw;
+    margin-top: 2.9vw;
+    width: 55vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pokupka {
+    display: flex;
+    width: 154%;
+    height: 26vw;
+    margin-top: 21vw;
+  }
+
+  .houses {
+    width: 64vw;
+    height: 30vw;
+    display: flex;
+  }
+
+  .firstdom {
+    width: 26vw;
+    height: 19vw;
+  }
+
+  .secondom {
+    width: 25vw;
+    height: 21vw;
+  }
+
+  .finaldom {
+    display: flex;
+    width: 18vw;
+    height: 17vw;
+  }
+
+  .finaldom.show {
+    opacity: 1;
+    width: 22vw;
+    height: 16vw;
+    margin: 2vw -2vw;
+  }
+
+
+  .krestik {
+    width: 10.6vw;
+    height: 8.4vw;
+    margin-top: -19.9vw;
+    margin-left: 10vw;
+  }
+
+  .strela {
+    background-size: contain;
+    margin-left: 2vw;
+    margin-top: 10vw;
+    width: 20vw;
+    height: 4vw;
+  }
+
+  .basket {
+    margin-left: 3vw;
+    margin-top: 5vw;
+    width: 12vw;
+    height: 11vw;
+  }
+
+  .sverhu {
+    margin-top: -0.9vw;
+    margin-left: -42.2vw;
+    width: 143%;
+    height: 54vw;
+    background-image: url(../img/sverhu.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pink-overlay,
+  .orange-overlay {
+    width: 90vw;
+    height: 78vw;
+  }
+
+
+  .know_more {
+    margin: 42vw 46.5vw;
+  }
+
+
+  .textic1 {
+    top: -10vw;
+    left: 2vw;
+    gap: 41vw;
+  }
+
+  .textic2 {
+    margin-left: 4vw;
+    margin-top: 22vw;
+    gap: 67vw;
+  }
+
+
+  .textic1,
+  .textic2 {
+    width: 105%;
+    min-height: 1.2em;
+    position: relative;
+  }
+
+  .first_screen_nw {
+    width: 100vw;
+    height: 365vw;
+    overflow-x: hidden;
+  }
+
+  .ryadi {
+    flex-direction: column-reverse;
+    display: flex;
+    margin-top: 4vw;
+    width: 100%;
+    height: 166vw;
+    gap: 2vw;
+    padding: 9vw 0vw 0vw 0vw;
+  }
+
+  .r1 {
+    margin-top: 2vw;
+    margin-left: 5vw;
+    width: 90vw;
+    height: 78vw;
+  }
+
+  .r2 {
+    width: 90vw;
+    height: 78vw;
+    margin-top: 2vw;
+    margin-left: 5vw;
+  }
+
+  .events {
+    width: 100vw;
+    font-size: 4.6vw;
+    text-align: center;
+    margin: -2vw 2vw;
+  }
+
+  .zadok {
+    position: absolute;
+    top: 27vw;
+    width: 102vw;
+    height: 52vw;
+    mask-image: url(../img/zadok.svg);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    left: -2vw;
+    animation: ToOrange 1s linear infinite;
+  }
+
+  .kniga {
+    margin-top: 3vw;
+    margin-left: 29vw;
+    width: 46vw;
+    height: 50vw;
+  }
+
+  .slider-container {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin: -108.3vw auto;
+    overflow: hidden;
+    padding: 0 5%;
+  }
+
+  .znania {
+    display: flex;
+    width: 95%;
+    height: 11vw;
+    margin-top: 101vw;
+    font-size: 3.6vw;
+  }
+
+  .garmoshka {
+    width: 19%;
+    height: 117.8%;
+    margin-left: 6vw;
+    margin-top: -1vw;
+    background-image: url(../img/garmoshka.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .splide__arrows {
+    width: 82vw;
+    position: absolute;
+    top: 60%;
+    left: 17px;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+
+
+
+  .contacts {
+    width: 100vw;
+    height: 6vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .kaifprojects {
+    font-size: 2.6vw;
+    font-family: 'FormaDJRCyrillicDisplay-Regular-Testing';
+    color: black;
+    padding: 2vw 0vw 4vw 2vw;
+  }
+
+
+  .apps {
+    width: 11vw;
+    height: 3vw;
+    display: flex;
+    margin-top: 1.5vw;
+    margin-left: 3vw;
+  }
+
+  .stroitel {
+    /* position: relative; */
+    width: 100%;
+    height: 164vw;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10vw;
+    background-color: #000000;
+    overflow: hidden;
+  }
+
+  .kamni,
+  .hrulkovo {
+    width: 90vw;
+    margin-left: 5vw;
+  }
+
+  .hrulkovo {
+    height: 78vw;
+  }
+
+
+  .kamni {
+    margin-top: -6vw;
+    height: 78vw;
+  }
+
+  .chel {
+    z-index: 100;
+    width: 104vw;
+    height: 74vw;
+    top: 92vw;
+    left: 34vw;
+  }
+}
+
+
+/* .first_screen_bk {
+    height: 130vw;
+  }
+
+  .pechatka {
+    height: 20%;
+    margin-top: 10vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kniga {
+    width: 70vw;
+    height: 65vw;
+    margin-top: 12vw;
+    margin-left: 15vw;
+    animation: rotateBook 10s linear infinite;
+  }
+
+  .zadok {
+    width: 140vw;
+    height: 90vw;
+    left: -15vw;
+    top: 20vw;
+  }
+
+  .slider-container {
+        top: 60%;
+        width: 100%;
+        margin: -5vw auto 0vw;
+        padding: 0;
+  }
+
+  .splide__list {
+    padding: 0 10px;
+  }
+
+  .splide__slide {
+    margin: 0 3px;
+  }
+
+  .splide__arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  .splide__arrow--prev {
+    left: -15px !important;
+  }
+
+  .splide__arrow--next {
+    right: -15px !important;
+  }
+
+  .znania {
+    margin-top: 80vw;
+    font-size: 4vw;
+    padding: 6vw 4vw;
+    line-height: 1.4;
+  }
+
+  .knopki {
+    width: 90vw;
+    margin-left: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  button {
+    width: 40vw;
+    height: 8vw;
+    font-size: 3vw;
+    margin: 1vw;
+  }
+
+  .about_company, 
+  .projects,
+  .book,
+  .news {
+    width: 40vw !important;
+  } */

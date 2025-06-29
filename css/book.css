@@ -1,0 +1,183 @@
+.first_screen_bk {
+    width: 100%;
+    height: 77vw;
+}
+
+.pechatka {
+    display: flex;
+    width: 100%;
+    height: 35%;
+    margin-top: 3vw;
+    margin-left: -2vw;
+}
+
+.kniga {
+    margin-top: 3%;
+    margin-left: 34vw;
+    position: absolute;
+    width: 39vw;
+    height: 36vw;
+    background-image: url(../img/kniga.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    animation: rotateBook 5s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotateBook {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.zadok {
+    position: absolute;
+    top: 10vw;
+    width: 76vw;
+    height: 40vw;
+    mask-image: url(../img/zadok.svg);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    left: 11vw;
+    animation: ToOrange 1s linear infinite;
+}
+
+@keyframes ToOrange {
+    0% {
+        background-color: #F97101;
+    }
+
+    50% {
+        background-color: #FDB4E9;
+    }
+
+    100% {
+        background-color: #F97101;
+    }
+}
+
+.slider-container {
+    position: absolute;
+    top: 139%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    /* Увеличиваем ширину для видимости соседних слайдов */
+    margin: -18.3vw auto;
+    overflow: visible;
+    /* Меняем на visible для показа соседних слайдов */
+    padding: 0 5%;
+    /* Добавляем отступы по бокам */
+}
+
+.splide__list {
+    display: flex;
+    align-items: center;
+    /* Выравниваем слайды по центру */
+    transition: transform 0.5s ease;
+    /* Плавная анимация перехода */
+}
+
+.splide__slide {
+    width: auto !important;
+    /* Автоматическая ширина для слайда */
+    height: auto !important;
+    position: relative !important;
+    flex: 0 0 auto;
+    /* Запрещаем растягивание */
+    margin: 0 10px;
+    /* Отступы между слайдами */
+    transition: transform 0.3s ease;
+    /* Анимация при наведении */
+}
+
+.splide__slide:hover {
+    transform: scale(1.05);
+    /* Эффект при наведении */
+}
+
+.splide__arrows {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    /* Позволяет кликать сквозь прозрачные области */
+}
+
+.splide__arrow {
+    position: relative !important;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    /* Включаем кликабельность */
+}
+
+.splide__arrow:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.splide__arrow--prev {
+    left: -30px !important;
+    /* Выносим за пределы контейнера */
+    background-image: url(./img/arrowr.svg);
+}
+
+.splide__arrow--next {
+    right: -30px !important;
+    /* Выносим за пределы контейнера */
+    background-image: url(../img/arrowl.svg);
+}
+
+/* Дополнительные стили для видимости соседних слайдов */
+.splide__track {
+    overflow: visible !important;
+}
+
+.slide-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.znania {
+    display: flex;
+    width: 100%;
+    height: 5vw;
+    margin-top: 34vw;
+    background-color: #F97101;
+    font-family: 'FormaDJRCyrillicDisplay-Regular-Testing';
+    font-size: 2.6vw;
+    padding: 3vw 2.56vw;
+    color: black;
+}
+
+.garmoshka {
+    width: 11%;
+    height: 156%;
+    margin-left: 32vw;
+    margin-top: -1vw;
+    background-image: url(../img/garmoshka.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
